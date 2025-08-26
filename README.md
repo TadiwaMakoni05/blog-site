@@ -1,76 +1,36 @@
-# 👨‍💻 Computer Scientist Portfolio (Next.js)
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-A sleek and modern **portfolio website** built with **Next.js** to showcase projects, skills, experience, and research work as a computer scientist.
+## Getting Started
 
----
-
-## 🚀 Features
-
-* 🏠 **Landing Page** with professional intro
-* 📂 **Projects Showcase** (with descriptions, links, and tech stack)
-* 📜 **Resume / CV Section** (downloadable)
-* 📖 **Research / Blog Section** (optional)
-* 📧 **Contact Form** with email integration
-* 🌙 **Dark/Light Mode Toggle**
-* 📱 **Responsive Design** with Tailwind CSS
-
----
-
-## 🛠 Tech Stack
-
-* **Framework**: Next.js (React + SSR/SSG)
-* **Styling**: Tailwind CSS
-* **Forms**: React Hook Form / EmailJS
-* **Deployment**: Vercel / Netlify
-
----
-
-## 📂 Project Structure
-
-```
-portfolio/
-│── public/            # Static assets (images, CV, favicon)
-│── src/
-│   ├── components/    # Reusable UI components (Navbar, Footer, etc.)
-│   ├── pages/         # Next.js pages (index, projects, contact, etc.)
-│   ├── data/          # JSON/YAML data for projects/skills
-│   └── styles/        # Global styles
-│
-│── package.json
-│── README.md
-```
-
----
-
-## ⚙️ Installation & Setup
+First, run the development server:
 
 ```bash
-# Clone repository
-git clone https://github.com/yourusername/portfolio.git
-cd portfolio
-
-# Install dependencies
-npm install
-
-# Run development server
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Visit: **[http://localhost:3000/](http://localhost:3000/)**
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-## 📦 Deployment
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-Easiest with **Vercel** (native support for Next.js):
+## Learn More
 
-```bash
-npm run build
-vercel deploy
-```
+To learn more about Next.js, take a look at the following resources:
 
----
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 📝 License
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-This project is licensed under the **MIT License**.
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
