@@ -1,133 +1,76 @@
-# 📝 Blog App (Django + React)
+# 👨‍💻 Computer Scientist Portfolio (Next.js)
 
-A modern full-stack(minimalistic design) **Blog Application** built with **Django (backend)** and **React (frontend)**.
-The app allows users to create, read, update, and delete blog posts, as well as manage authentication and comments.
+A sleek and modern **portfolio website** built with **Next.js** to showcase projects, skills, experience, and research work as a computer scientist.
 
 ---
 
 ## 🚀 Features
 
-* 🔐 **User Authentication** (Register, Login, Logout, JWT-based auth)
-* ✍️ **Create, Edit, Delete Blog Posts**
-* 📖 **Read Blog Posts with Pagination**
-* 💬 **Comment System**
-* 👤 **User Profiles** (showing posts by author)
-* 🔎 **Search & Filter Posts**
-* 🎨 **Responsive UI** built with React + Tailwind CSS
-* ⚡ **REST API** built with Django REST Framework
+* 🏠 **Landing Page** with professional intro
+* 📂 **Projects Showcase** (with descriptions, links, and tech stack)
+* 📜 **Resume / CV Section** (downloadable)
+* 📖 **Research / Blog Section** (optional)
+* 📧 **Contact Form** with email integration
+* 🌙 **Dark/Light Mode Toggle**
+* 📱 **Responsive Design** with Tailwind CSS
 
 ---
 
 ## 🛠 Tech Stack
 
-**Frontend:**
-* React
-* React Router
-* Axios
-
-**Backend:**
-* Django
-
-**Database:**
-* SQLite (for development)
+* **Framework**: Next.js (React + SSR/SSG)
+* **Styling**: Tailwind CSS
+* **Forms**: React Hook Form / EmailJS
+* **Deployment**: Vercel / Netlify
 
 ---
 
 ## 📂 Project Structure
 
 ```
-blog-site/
-│── backend/            # Django project
+portfolio/
+│── public/            # Static assets (images, CV, favicon)
+│── src/
+│   ├── components/    # Reusable UI components (Navbar, Footer, etc.)
+│   ├── pages/         # Next.js pages (index, projects, contact, etc.)
+│   ├── data/          # JSON/YAML data for projects/skills
+│   └── styles/        # Global styles
 │
-│── frontend/           # React project
-│
-│── README.md
-│── requirements.txt
 │── package.json
+│── README.md
 ```
 
 ---
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Backend (Django)
-
 ```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate   # (Linux/Mac)
-venv\Scripts\activate      # (Windows)
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run migrations
-python manage.py migrate
-
-# Start backend server
-python manage.py runserver
-```
-
-Backend will run on: **[http://127.0.0.1:8000/](http://127.0.0.1:8000/)**
-
----
-
-### 2️⃣ Frontend (React)
-
-```bash
-cd ../frontend
+# Clone repository
+git clone https://github.com/yourusername/portfolio.git
+cd portfolio
 
 # Install dependencies
 npm install
 
-# Start frontend
-npm start
+# Run development server
+npm run dev
 ```
 
-Frontend will run on: **[http://localhost:3000/](http://localhost:3000/)**
-
----
-
-## 🔑 API Endpoints (Examples)
-
-| Method | Endpoint              | Description             |
-| ------ | --------------------- | ----------------------- |
-| GET    | `/api/posts/`         | List all blog posts     |
-| POST   | `/api/posts/`         | Create a new post       |
-| GET    | `/api/posts/:id/`     | Get single post details |
-| PUT    | `/api/posts/:id/`     | Update a post           |
-| DELETE | `/api/posts/:id/`     | Delete a post           |
-| POST   | `/api/auth/login/`    | Login user (JWT)        |
-| POST   | `/api/auth/register/` | Register new user       |
-
----
-
-## 🧪 Testing
-
-### Backend
-
-```bash
-cd backend
-python manage.py test
-```
-
-### Frontend
-
-```bash
-cd frontend
-npm test
-```
+Visit: **[http://localhost:3000/](http://localhost:3000/)**
 
 ---
 
 ## 📦 Deployment
 
-* **Backend**: Deploy with Gunicorn + Nginx / Heroku / Render
-* **Frontend**: Deploy with Netlify / Vercel / Nginx
+Easiest with **Vercel** (native support for Next.js):
+
+```bash
+npm run build
+vercel deploy
+```
+
 ---
 
 ## 📝 License
 
 This project is licensed under the **MIT License**.
-Feel free to use, modify, and distribute it as needed.
-
