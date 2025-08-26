@@ -8,8 +8,6 @@ A sleek and modern **portfolio website** built with **Next.js** to showcase proj
 
 * 🏠 **Landing Page** with professional intro
 * 📂 **Projects Showcase** (with descriptions, links, and tech stack)
-* 📜 **Resume / CV Section** (downloadable)
-* 📖 **Research / Blog Section** (optional)
 * 📧 **Contact Form** with email integration
 * 🌙 **Dark/Light Mode Toggle**
 * 📱 **Responsive Design** with Tailwind CSS
@@ -18,9 +16,8 @@ A sleek and modern **portfolio website** built with **Next.js** to showcase proj
 
 ## 🛠 Tech Stack
 
-* **Framework**: Next.js (React + SSR/SSG)
+* **Framework**: Next.js
 * **Styling**: Tailwind CSS
-* **Forms**: React Hook Form / EmailJS
 * **Deployment**: Vercel / Netlify
 
 ---
@@ -66,7 +63,6 @@ Easiest with **Vercel** (native support for Next.js):
 
 ```bash
 npm run build
-vercel deploy
 ```
 
 ---
