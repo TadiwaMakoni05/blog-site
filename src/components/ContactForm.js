@@ -24,10 +24,12 @@ const ContactForm = () => {
     alert('Form submitted! (Check console for data)');
   };
 
+  const inputClasses = "w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[rgb(var(--primary))] disabled:cursor-not-allowed disabled:opacity-50";
+
   return (
-    <form onSubmit={handleSubmit} className="max-w-xl mx-auto">
-      <div className="mb-4">
-        <label htmlFor="name" className="block text-lg font-medium mb-2">Name</label>
+    <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-6">
+      <div>
+        <label htmlFor="name" className="block text-sm font-medium text-[rgb(var(--muted-foreground))] mb-2">Name</label>
         <input
           type="text"
           id="name"
@@ -35,11 +37,11 @@ const ContactForm = () => {
           value={formData.name}
           onChange={handleChange}
           required
-          className="w-full p-2 border rounded-md bg-gray-100 dark:bg-gray-700 dark:border-gray-600"
+          className={inputClasses}
         />
       </div>
-      <div className="mb-4">
-        <label htmlFor="email" className="block text-lg font-medium mb-2">Email</label>
+      <div>
+        <label htmlFor="email" className="block text-sm font-medium text-[rgb(var(--muted-foreground))] mb-2">Email</label>
         <input
           type="email"
           id="email"
@@ -47,11 +49,11 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full p-2 border rounded-md bg-gray-100 dark:bg-gray-700 dark:border-gray-600"
+          className={inputClasses}
         />
       </div>
-      <div className="mb-4">
-        <label htmlFor="message" className="block text-lg font-medium mb-2">Message</label>
+      <div>
+        <label htmlFor="message" className="block text-sm font-medium text-[rgb(var(--muted-foreground))] mb-2">Message</label>
         <textarea
           id="message"
           name="message"
@@ -59,10 +61,13 @@ const ContactForm = () => {
           onChange={handleChange}
           required
           rows="4"
-          className="w-full p-2 border rounded-md bg-gray-100 dark:bg-gray-700 dark:border-gray-600"
+          className={`${inputClasses} min-h-[100px]`}
         ></textarea>
       </div>
-      <button type="submit" className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">
+      <button
+        type="submit"
+        className="w-full bg-[rgb(var(--primary))] text-white font-semibold p-3 rounded-md hover:bg-blue-500/90 transition-colors"
+      >
         Send Message
       </button>
     </form>

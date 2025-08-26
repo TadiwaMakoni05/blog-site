@@ -2,17 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: 255 255 255;
-  --foreground: 0 0 0;
+  --foreground: 17 24 39;
+  --primary: 96 165 250;
+  --secondary: 243 244 246;
+  --border: 229 231 235;
+  --muted-foreground: 107 114 128;
 }
 
 .dark {
-  --background: 0 0 0;
-  --foreground: 255 255 255;
+  --background: 17 24 39;
+  --foreground: 229 231 235;
+  --primary: 96 165 250;
+  --secondary: 31 41 55;
+  --border: 55 65 81;
+  --muted-foreground: 156 163 175;
 }
 
 body {
   color: rgb(var(--foreground));
   background: rgb(var(--background));
+  font-family: var(--font-geist-sans);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
